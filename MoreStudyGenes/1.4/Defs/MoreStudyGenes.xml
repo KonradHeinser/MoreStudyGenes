@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneDef ParentName="GeneLearningBase">
+        <defName>Learning_VerySlow</defName>
+        <label>very slow study</label>
+        <description>Carriers of this gene have deficient long-term memories and don't understand new ideas quickly. They are slow at learning new skills and knowledge.</description>
+        <iconPath>UI/Icons/Genes/Gene_SlowLearning</iconPath>
+        <displayOrderInCategory>29</displayOrderInCategory>
+        <statFactors>
+            <GlobalLearningFactor>0.25</GlobalLearningFactor>
+            <LearningRateFactor MayRequire="ChildrenCanLearnFast.Mod">0.25</LearningRateFactor>
+        </statFactors>
+        <biostatMet>3</biostatMet>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>thag</symbol></li>
+                <li><symbol>grunt</symbol></li>
+                <li><symbol>slow</symbol></li>
+                <li><symbol>dull</symbol></li>
+                <li><symbol>dumb</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>grunt</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneLearningBase">
+        <defName>Learning_SomewhatSlow</defName>
+        <label>somewhat slow study</label>
+        <description>Carriers of this gene have deficient long-term memories and don't understand new ideas quickly. They are slow at learning new skills and knowledge.</description>
+        <iconPath>UI/Icons/Genes/Gene_SlowLearning</iconPath>
+        <displayOrderInCategory>31</displayOrderInCategory>
+        <statFactors>
+            <GlobalLearningFactor>0.75</GlobalLearningFactor>
+            <LearningRateFactor MayRequire="ChildrenCanLearnFast.Mod">0.75</LearningRateFactor>
+        </statFactors>
+        <biostatMet>1</biostatMet>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>thag</symbol></li>
+                <li><symbol>grunt</symbol></li>
+                <li><symbol>slow</symbol></li>
+                <li><symbol>dull</symbol></li>
+                <li><symbol>dumb</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>grunt</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneLearningBase">
+        <defName>Learning_SlightlyFast</defName>
+        <label>slightly quick study</label>
+        <description>Carriers of this gene have excellent memories and grasp new ideas quickly. They learn faster than others.</description>
+        <iconPath>UI/Icons/Genes/Gene_FastLearning</iconPath>
+        <displayOrderInCategory>33</displayOrderInCategory>
+        <statFactors>
+            <GlobalLearningFactor>1.17</GlobalLearningFactor>
+            <LearningRateFactor MayRequire="ChildrenCanLearnFast.Mod">1.17</LearningRateFactor>
+        </statFactors>
+        <biostatMet>-1</biostatMet>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>brain</symbol></li>
+                <li><symbol>nerd</symbol></li>
+                <li><symbol>smart</symbol></li>
+                <li><symbol>corti</symbol></li>
+                <li><symbol>neuro</symbol></li>
+                <li><symbol>mnemo</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>nerd</symbol></li>
+                <li><symbol>brain</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneLearningBase">
+        <defName>Learning_SomewhatFast</defName>
+        <label>somewhat quick study</label>
+        <description>Carriers of this gene have excellent memories and grasp new ideas quickly. They learn faster than others.</description>
+        <iconPath>UI/Icons/Genes/Gene_FastLearning</iconPath>
+        <displayOrderInCategory>34</displayOrderInCategory>
+        <statFactors>
+            <GlobalLearningFactor>1.33</GlobalLearningFactor>
+            <LearningRateFactor MayRequire="ChildrenCanLearnFast.Mod">1.33</LearningRateFactor>
+        </statFactors>
+        <biostatMet>-2</biostatMet>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>brain</symbol></li>
+                <li><symbol>nerd</symbol></li>
+                <li><symbol>smart</symbol></li>
+                <li><symbol>corti</symbol></li>
+                <li><symbol>neuro</symbol></li>
+                <li><symbol>mnemo</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>nerd</symbol></li>
+                <li><symbol>brain</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneLearningBase">
+        <defName>Learning_VeryFast</defName>
+        <label>very quick study</label>
+        <description>Carriers of this gene have excellent memories and grasp new ideas quickly. They learn faster than others.</description>
+        <iconPath>UI/Icons/Genes/Gene_FastLearning</iconPath>
+        <displayOrderInCategory>36</displayOrderInCategory>
+        <statFactors>
+            <GlobalLearningFactor>1.75</GlobalLearningFactor>
+            <LearningRateFactor MayRequire="ChildrenCanLearnFast.Mod">1.75</LearningRateFactor>
+        </statFactors>
+        <biostatCpx>3</biostatCpx>
+        <biostatMet>-4</biostatMet>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>brain</symbol></li>
+                <li><symbol>nerd</symbol></li>
+                <li><symbol>smart</symbol></li>
+                <li><symbol>corti</symbol></li>
+                <li><symbol>neuro</symbol></li>
+                <li><symbol>mnemo</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>nerd</symbol></li>
+                <li><symbol>brain</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneLearningBase">
+        <defName>Learning_SuperFast</defName>
+        <label>super quick study</label>
+        <description>Carriers of this gene have excellent memories and grasp new ideas quickly. They learn faster than others.</description>
+        <iconPath>UI/Icons/Genes/Gene_FastLearning</iconPath>
+        <displayOrderInCategory>37</displayOrderInCategory>
+        <statFactors>
+            <GlobalLearningFactor>2.0</GlobalLearningFactor>
+            <LearningRateFactor MayRequire="ChildrenCanLearnFast.Mod">2.0</LearningRateFactor>
+        </statFactors>
+        <biostatCpx>4</biostatCpx>
+        <biostatMet>-5</biostatMet>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>brain</symbol></li>
+                <li><symbol>nerd</symbol></li>
+                <li><symbol>smart</symbol></li>
+                <li><symbol>corti</symbol></li>
+                <li><symbol>neuro</symbol></li>
+                <li><symbol>mnemo</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>nerd</symbol></li>
+                <li><symbol>brain</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+</Defs>
