@@ -1,12 +1,33 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-    <Operation Class="PatchOperationReplace">
-        <xpath>/Defs/GeneDef[defName="Learning_Fast"]/statOffsets</xpath>
-        <value>
-            <statFactors>
-                <GlobalLearningFactor>1.5</GlobalLearningFactor>
-                <LearningRateFactor MayRequire="ChildrenCanLearnFast.Mod">1.5</LearningRateFactor>
-            </statFactors>
-        </value>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="Learning_Fast"]/statOffsets</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/GeneDef[defName="Learning_Fast"]/statOffsets</xpath>
+            <value>
+                <statFactors>
+                    <GlobalLearningFactor>1.5</GlobalLearningFactor>
+                    <LearningRateFactor MayRequire="ChildrenCanLearnFast.Mod">1.5</LearningRateFactor>
+                </statFactors>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationConditional">
+            <xpath>Defs/GeneDef[defName="Learning_Fast"]/statFactors</xpath>
+            <match Class="PatchOperationAdd">
+                <xpath>Defs/GeneDef[defName="Learning_Fast"]/statFactors</xpath>
+                <value>
+                    <LearningRateFactor MayRequire="ChildrenCanLearnFast.Mod">1.5</LearningRateFactor>
+                </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+                <xpath>Defs/GeneDef[defName="Learning_Fast"]</xpath>
+                <value>
+                    <statFactors>
+                        <GlobalLearningFactor>1.5</GlobalLearningFactor>
+                        <LearningRateFactor MayRequire="ChildrenCanLearnFast.Mod">1.5</LearningRateFactor>
+                    </statFactors>
+                </value>
+            </nomatch>
+        </nomatch>
     </Operation>
 </Patch>
